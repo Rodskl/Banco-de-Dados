@@ -6,23 +6,7 @@ create table Cliente (
 	CPF varchar(15) unique
 );
 
-create table Endereco (
-	IDENDERECO int primary key auto_increment,
-	RUA varchar(30) not null,
-	BAIRRO varchar(30) not null,
-	CIDADE varchar(30) not null,
-	ESTADO char(2) not null
-);
-
-create table Telefone (
-	IDTELEFONE int primary key auto_increment,
-	TIPO enum('RES','COM','CEL') not null,
-	NUMERO varchar(10) not null
-);
-
-/* Tabela com chave estrangeira */
-
-CREATE TABLE ENDERECO(
+CREATE TABLE Endereco(
 	IDENDERECO INT PRIMARY KEY AUTO_INCREMENT, 
 	RUA VARCHAR(30) NOT NULL,
 	BAIRRO VARCHAR(30) NOT NULL,
